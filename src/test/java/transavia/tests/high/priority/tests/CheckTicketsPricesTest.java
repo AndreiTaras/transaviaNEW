@@ -20,7 +20,7 @@ public class CheckTicketsPricesTest extends TestBase {
 
 
 
-    @Test(groups = "checkTicketPrice" , description = "Check that ticket price equals booking price" )
+    @Test(groups = "checkTicketPrice" , description = "Check that ticket price equals booking price" ,enabled = false)
     public void checkTicketsPriceTest() throws IOException {
 
         String number = CSVReaderClass.getFirstValueFromCSV(bookingDataCSV);

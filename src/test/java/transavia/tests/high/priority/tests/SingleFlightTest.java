@@ -16,7 +16,7 @@ public class SingleFlightTest extends TestBase {
     String airportsCSV = "airports4.csv";
     String datesCSV = "dates.csv";
 
-    @Test(groups = "checkSingleFlight" , description = "Check single flight for one person in one direction")
+    @Test(groups = "checkSingleFlight" , description = "Check single flight for one person in one direction",enabled = false)
     public void singleFlightTest() throws IOException {
 
         String cityFrom =  CSVReaderClass.getFirstValueFromCSV(airportsCSV);
