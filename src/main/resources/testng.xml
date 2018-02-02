@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="transaviaTests" verbose="1">
+
+    <suite-files>
+        <suite-file path="highPriorityTests.xml"/>
+        <suite-file path="lowPriorityTests.xml"/>
+    </suite-files>
+</suite>

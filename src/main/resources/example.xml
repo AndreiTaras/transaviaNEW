@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name ="highPriorityTests">
+<test name = "simpleTest">
+    <groups>
+        <run>
+            <include name = "simpleTest" />
+        </run>
+    </groups>
+    <classes>
+        <class name = "transavia.tests.example.exampleTest" />
+    </classes>
+</test>
+
+
+    <test name = "gmailTest">
+        <groups>
+            <run>
+                <include name = "gmailTest" />
+            </run>
+        </groups>
+        <classes>
+            <class name = "transavia.tests.example.exampleTest" />
+        </classes>
+    </test>
+
+
+
+</suite>

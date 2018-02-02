@@ -1,0 +1,72 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="highPriorityTests" verbose="1"  thread-count="1">
+
+    <test name="checkDubaiAgadirFlight" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkDubaiAgadirFlight"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.DubaiAgadirTest"/>
+        </classes>
+    </test>
+
+   <!-- <test name="checkTicketPrice" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkTicketPrice"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.CheckTicketsPricesTest"/>
+        </classes>
+    </test>
+
+    <test name="checkTicketTime" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkTicketTime"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.CheckTimeTest"/>
+        </classes>
+    </test>
+
+    <test name="checkComplicateRoute" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkComplicateRoute"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.ComplicateRouteTest"/>
+        </classes>
+    </test>
+
+
+    <test name="checkSingleFlight" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkSingleFlight"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.SingleFlightTest"/>
+        </classes>
+    </test>
+
+    <test name="checkTotalSum" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkTotalSum"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.high.priority.tests.TotalSumTest"/>
+        </classes>
+    </test>
+-->
+</suite>

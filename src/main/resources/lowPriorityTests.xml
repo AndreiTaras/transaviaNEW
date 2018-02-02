@@ -1,0 +1,38 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="lowPriorityTests" verbose="1" parallel="tests" thread-count="3">
+
+    <test name="checkVideoLink" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkVideoLink"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.low.priority.tests.CheckVideoTitleAndAuthorTest"/>
+        </classes>
+    </test>
+
+    <test name="findCheapestTicket" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="findCheapestTicket"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.low.priority.tests.FindCheapestTicketTest"/>
+        </classes>
+    </test>
+
+    <test name="checkBudgetFlight" verbose="1" annotations="JDK">
+        <groups>
+            <run>
+                <include name="checkBudgetFlight"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="transavia.tests.low.priority.tests.SearchBudgetFlightsTest"/>
+        </classes>
+    </test>
+
+</suite>
