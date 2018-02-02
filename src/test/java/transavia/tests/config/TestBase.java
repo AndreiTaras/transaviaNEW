@@ -16,7 +16,7 @@ public abstract class TestBase {
     DriverFactory driverFactory = new DriverFactory();
 
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUp() throws MalformedURLException {
         driver = driverFactory.getInstance();
         driver.get(PropertyProvider.getProperty("url"));
